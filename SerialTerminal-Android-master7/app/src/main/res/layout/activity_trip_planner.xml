@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_trip_planner"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.devmel.apps.serialterminal.TripPlannerActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:gravity="end"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:background="#FFBDBDBD"
+            android:theme="?attr/actionBarTheme"
+            android:minHeight="?attr/actionBarSize"
+            android:id="@+id/toolbar2"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:layout_alignTop="@+id/floatingActionButton4" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:fabSize="mini"
+            android:gravity="bottom"
+            app:srcCompat="@android:drawable/ic_menu_myplaces"
+
+            android:id="@+id/floatingActionButton4"
+            android:layout_marginRight="22dp"
+            android:layout_marginEnd="22dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+
+            app:elevation="0dp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:fabSize="mini"
+            app:srcCompat="@android:drawable/ic_dialog_dialer"
+            android:layout_marginLeft="27dp"
+            android:layout_marginStart="27dp"
+            android:id="@+id/floatingActionButton1"
+            app:rippleColor="?android:attr/textColorPrimaryDisableOnly"
+            app:elevation="0dp"
+            android:fadingEdge="none"
+            android:gravity="bottom"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:onClick="efficiencyStats();" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:fabSize="mini"
+            app:srcCompat="@android:drawable/star_big_off"
+            android:id="@+id/floatingActionButton3"
+            android:layout_marginRight="53dp"
+            android:layout_marginEnd="53dp"
+            tools:ignore="RelativeOverlap"
+            app:elevation="0dp"
+            android:gravity="bottom"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/floatingActionButton4"
+            android:layout_toStartOf="@+id/floatingActionButton4" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:fabSize="mini"
+            app:srcCompat="@android:drawable/ic_dialog_map"
+            android:id="@+id/floatingActionButton2"
+            android:layout_marginLeft="54dp"
+            android:layout_marginStart="54dp"
+            app:elevation="0dp"
+            android:gravity="bottom"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/floatingActionButton1"
+            android:layout_toEndOf="@+id/floatingActionButton1" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

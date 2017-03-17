@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.devmel.apps.serialterminal.EfficiencyStats">
+
+
+    <com.jjoe64.graphview.GraphView
+        android:layout_width="match_parent"
+        android:id="@+id/graphBar"
+        android:background="#38bbad"
+        android:scrollbars="horizontal"
+
+        android:layout_height="250dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+
+        />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView_avg_label"
+        android:layout_toStartOf="@+id/linearLayout4"
+        android:layout_toLeftOf="@+id/linearLayout4"
+        android:layout_width="wrap_content">
+
+
+        <TextView
+            android:text="Monday"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_avg1"
+            android:textSize="18sp"
+            android:layout_width="351dp" />
+
+        <TextView
+            android:text="Tuesday"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_avg2"
+            android:textSize="18sp"
+            android:layout_width="match_parent" />
+
+        <TextView
+            android:text="Wednesday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_avg3"
+            android:textSize="18sp" />
+
+        <TextView
+            android:text="Thursday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_avg4"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/textView_avg_label"
+
+        android:layout_gravity="center"
+        android:text="@string/average_efficiency"
+        android:textSize="24sp"
+        android:textAlignment="center"
+
+        android:gravity="center"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:background="#FF1CAC9C"
+
+        android:layout_below="@+id/graphBar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_width="30dp"
+        android:layout_below="@+id/textView_avg_label">
+
+        <ImageView
+            android:layout_width="26dp"
+            android:layout_height="22dp"
+            app:srcCompat="@drawable/edno"
+            android:id="@+id/imageView5"
+            android:contentDescription="" />
+
+        <ImageView
+            android:layout_width="27dp"
+            android:layout_height="22dp"
+            app:srcCompat="@drawable/edno"
+            android:id="@+id/imageView4" />
+
+        <ImageView
+            android:layout_width="27dp"
+            android:layout_height="22dp"
+            app:srcCompat="@drawable/edno"
+            android:id="@+id/imageView3" />
+
+        <ImageView
+            android:layout_width="27dp"
+            android:layout_height="22dp"
+            app:srcCompat="@drawable/edno"
+            android:id="@+id/imageView2" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="37dp">
+
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.Toolbar
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:background="#FFBDBDBD"
+        android:theme="?attr/actionBarTheme"
+        android:minHeight="?attr/actionBarSize"
+        android:id="@+id/toolbar2"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/floatingActionButton2" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:fabSize="mini"
+        app:srcCompat="@android:drawable/ic_dialog_map"
+        android:id="@+id/floatingActionButton2"
+        android:layout_marginLeft="49dp"
+        android:layout_marginStart="49dp"
+        app:elevation="0dp"
+        android:gravity="bottom"
+        android:layout_alignBottom="@+id/floatingActionButton1"
+        android:layout_toRightOf="@+id/floatingActionButton1"
+        android:layout_toEndOf="@+id/floatingActionButton1" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:fabSize="mini"
+        app:srcCompat="@android:drawable/star_big_off"
+        android:id="@+id/floatingActionButton3"
+        tools:ignore="RelativeOverlap"
+        app:elevation="0dp"
+        android:layout_alignBottom="@+id/floatingActionButton2"
+        android:layout_toRightOf="@+id/floatingActionButton2"
+        android:layout_toEndOf="@+id/floatingActionButton2"
+        android:layout_marginLeft="69dp"
+        android:layout_marginStart="69dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:fabSize="mini"
+        app:srcCompat="@android:drawable/ic_menu_myplaces"
+
+        android:id="@+id/floatingActionButton4"
+        android:layout_marginRight="12dp"
+        android:layout_marginEnd="12dp"
+        app:elevation="0dp"
+        android:layout_alignBottom="@+id/floatingActionButton3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:fabSize="mini"
+        app:srcCompat="@android:drawable/ic_dialog_dialer"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp"
+        android:id="@+id/floatingActionButton1"
+        app:rippleColor="?android:attr/textColorPrimaryDisableOnly"
+        app:elevation="0dp"
+        android:fadingEdge="none"
+        android:onClick="efficiencyStats();"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

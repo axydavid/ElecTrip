@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+        <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+                <!-- Customize your theme here. -->
+                <item name="titleTextColor">#9cbe54</item>
+
+                <item name="colorPrimary">@android:color/background_light</item>
+
+                <item name="colorAccent">@android:color/secondary_text_dark</item>
+
+                <item name="android:textColorPrimary">@android:color/black</item>
+                <item name="android:textColorPrimaryInverse">@android:color/background_light</item>
+                <item name="android:colorBackground">@android:color/background_light</item>
+                <item name="android:windowBackground">?android:attr/colorBackground</item>
+                <item name="android:statusBarColor">@color/common_action_bar_splitter</item>
+        </style>
+</resources>
