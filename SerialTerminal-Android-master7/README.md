@@ -1,6 +1,6 @@
-# SerialTerminal-Android
+# ElecTrip
 
-This app is a simple serial terminal. It is very useful debugging tool for serial communication applications.
+This app is built uppon a serial terminal.
 
 Compatibility :
  - Bluetooth
